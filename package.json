@@ -1,0 +1,22 @@
+{
+  "name": "rivo-proxy",
+  "version": "1.5.3",
+  "description": "Production-grade reverse proxy for development/debugging (use responsibly).",
+  "type": "module",
+  "main": "server/proxy.js",
+  "scripts": {
+    "start": "node server/proxy.js",
+    "dev": "NODE_ENV=development node --inspect server/proxy.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie": "^0.5.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.8.0",
+    "helmet": "^6.0.1",
+    "jsdom": "^22.1.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.4.0"
+  }
+}
+
